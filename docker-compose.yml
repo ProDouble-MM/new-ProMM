@@ -1,6 +1,8 @@
-version: '3.3'
+version: '3'
 services:
-  frontend:
-    image: phanuwat33/doublemm:latest
+  app:
+    container_name: doublemm
+    restart: always
+    image:  phanuwat33/doublemm:latest
     ports:
-      - "8080:80"
+      - "8081:3000"
